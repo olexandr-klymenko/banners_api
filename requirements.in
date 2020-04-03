@@ -1,0 +1,11 @@
+invoke
+fastapi
+couchbase
+uvicorn
+pyjwt
+python-multipart
+email-validator
+requests
+passlib[bcrypt]
+emails
+jinja2
