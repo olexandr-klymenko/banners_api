@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  api-debug:
+    build:
+      context: '../'
+      dockerfile: './banners_api/Dockerfile'
+    image: banners_api:latest
+    environment:
+      CONFIG_URL: 'local_settings.json'
+    command: inv run
+    cap_add:
+      - SYS_PTRACE
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/opt/banners_api

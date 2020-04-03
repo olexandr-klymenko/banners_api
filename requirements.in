@@ -9,3 +9,4 @@ requests
 passlib[bcrypt]
 emails
 jinja2
+python-dotenv

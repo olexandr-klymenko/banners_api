@@ -30,6 +30,7 @@ pycparser==2.20           # via cffi
 pydantic==1.4             # via fastapi
 pyjwt==1.7.1              # via -r requirements.in
 python-dateutil==2.8.1    # via emails
+python-dotenv==0.12.0     # via -r requirements.in
 python-multipart==0.0.5   # via -r requirements.in
 requests==2.23.0          # via -r requirements.in, emails, premailer
 six==1.14.0               # via bcrypt, python-dateutil, python-multipart

@@ -24,7 +24,7 @@ def get_default_bucket():
     )
 
 
-def get_cluster(username: str, password: str, host="couchbase", port="8091"):
+def get_cluster(username: str, password: str, host="couchdb", port="5984"):
     # cluster_url="couchbase://couchbase"
     # username = "Administrator"
     # password = "password"
@@ -39,8 +39,8 @@ def get_bucket(
     username: str,
     password: str,
     bucket_name: str,
-    host="couchbase",
-    port="8091",
+    host="couchdb",
+    port="5984",
     timeout: float = COUCHBASE_OPERATION_TIMEOUT_SECS,
     n1ql_timeout: float = COUCHBASE_N1QL_TIMEOUT_SECS,
 ):

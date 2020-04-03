@@ -2,6 +2,13 @@
 
 from invoke import task
 
+APP_NAME = "banners_api"
+
+
+@task
+def build(ctx):
+    ctx.run(f"docker build -t {APP_NAME} .")
+
 
 @task
 def init(ctx):
@@ -40,18 +47,9 @@ def test(ctx, where="tests"):
 
 
 @task
-def run(ctx):
+def run(ctx, host="0.0.0.0", port="8000"):
     """Run the app in production mode.
 
     This task can be run from Docker
     """
-    ctx.run("uvicorn app.main:app --reload")
-
-
-@task
-def run_dev(ctx):
-    """Run the app in production mode.
-
-    This task can be run from Docker
-    """
-    ctx.run("uvicorn app.main:app --reload")
+    ctx.run(f"uvicorn app.main:app --reload --host {host} --port {port} --debug")

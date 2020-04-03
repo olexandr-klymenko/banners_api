@@ -1,5 +1,6 @@
 FROM python:3.8-slim-buster
 
+WORKDIR /opt/banners_api
 
 # Dependencies for Couchbase
 RUN apt update && apt install -y wget gnupg2
@@ -9,9 +10,11 @@ RUN wget -O - http://packages.couchbase.com/ubuntu/couchbase.key | apt-key add -
     apt-get update && apt-get install -y libcouchbase-dev libcouchbase2-bin build-essential
 
 ARG env=prod
-EXPOSE 8888
 
 COPY requirements.txt requirements.txt
-COPY ./app /app
 
 RUN pip install --no-cache-dir -r requirements.txt
+
+COPY .env .env
+COPY tasks.py tasks.py
+COPY ./app ./app
