@@ -22,7 +22,7 @@ httptools==0.1.1          # via uvicorn
 idna==2.9                 # via email-validator, requests
 invoke==1.4.1             # via -r requirements.in
 jinja2==2.11.1            # via -r requirements.in
-lxml==4.5.0               # via emails, premailer
+lxml==4.6.2               # via emails, premailer
 markupsafe==1.1.1         # via jinja2
 passlib[bcrypt]==1.7.2    # via -r requirements.in
 premailer==3.6.1          # via emails
