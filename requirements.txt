@@ -4,38 +4,87 @@
 #
 #    inv pin
 #
-bcrypt==3.1.7             # via passlib
-cachetools==4.0.0         # via premailer
-certifi==2019.11.28       # via requests
-cffi==1.14.0              # via bcrypt
-chardet==3.0.4            # via emails, requests
-click==7.1.1              # via uvicorn
-couchbase==2.5.11         # via -r requirements.in
-cssselect==1.1.0          # via premailer
-cssutils==1.0.2           # via emails, premailer
-dnspython==1.16.0         # via email-validator
-email-validator==1.0.5    # via -r requirements.in
-emails==0.5.15            # via -r requirements.in
-fastapi==0.53.2           # via -r requirements.in
-h11==0.9.0                # via uvicorn
-httptools==0.1.1          # via uvicorn
-idna==2.9                 # via email-validator, requests
-invoke==1.4.1             # via -r requirements.in
-jinja2==2.11.1            # via -r requirements.in
-lxml==4.5.0               # via emails, premailer
-markupsafe==1.1.1         # via jinja2
-passlib[bcrypt]==1.7.2    # via -r requirements.in
-premailer==3.6.1          # via emails
-pycparser==2.20           # via cffi
-pydantic==1.4             # via fastapi
-pyjwt==1.7.1              # via -r requirements.in
-python-dateutil==2.8.1    # via emails
-python-dotenv==0.12.0     # via -r requirements.in
-python-multipart==0.0.5   # via -r requirements.in
-requests==2.23.0          # via -r requirements.in, emails, premailer
-six==1.14.0               # via bcrypt, python-dateutil, python-multipart
-starlette==0.13.2         # via fastapi
-urllib3==1.25.8           # via requests
-uvicorn==0.11.3           # via -r requirements.in
-uvloop==0.14.0            # via uvicorn
-websockets==8.1           # via uvicorn
+bcrypt==3.1.7
+    # via passlib
+cachetools==4.0.0
+    # via premailer
+certifi==2019.11.28
+    # via requests
+cffi==1.14.0
+    # via bcrypt
+chardet==3.0.4
+    # via
+    #   emails
+    #   requests
+click==7.1.1
+    # via uvicorn
+couchbase==2.5.11
+    # via -r requirements.in
+cssselect==1.1.0
+    # via premailer
+cssutils==1.0.2
+    # via
+    #   emails
+    #   premailer
+dnspython==1.16.0
+    # via email-validator
+email-validator==1.0.5
+    # via -r requirements.in
+emails==0.5.15
+    # via -r requirements.in
+fastapi==0.53.2
+    # via -r requirements.in
+h11==0.9.0
+    # via uvicorn
+httptools==0.1.1
+    # via uvicorn
+idna==2.9
+    # via
+    #   email-validator
+    #   requests
+invoke==1.4.1
+    # via -r requirements.in
+jinja2==2.11.3
+    # via -r requirements.in
+lxml==4.5.0
+    # via
+    #   emails
+    #   premailer
+markupsafe==1.1.1
+    # via jinja2
+passlib[bcrypt]==1.7.2
+    # via -r requirements.in
+premailer==3.6.1
+    # via emails
+pycparser==2.20
+    # via cffi
+pydantic==1.4
+    # via fastapi
+pyjwt==1.7.1
+    # via -r requirements.in
+python-dateutil==2.8.1
+    # via emails
+python-dotenv==0.12.0
+    # via -r requirements.in
+python-multipart==0.0.5
+    # via -r requirements.in
+requests==2.23.0
+    # via
+    #   -r requirements.in
+    #   emails
+    #   premailer
+six==1.14.0
+    # via
+    #   bcrypt
+    #   python-dateutil
+    #   python-multipart
+starlette==0.13.2
+    # via fastapi
+urllib3==1.25.8
+    # via requests
+uvicorn==0.11.3
+    # via -r requirements.in
+uvloop==0.14.0
+    # via uvicorn
+websockets==8.1
+    # via uvicorn
